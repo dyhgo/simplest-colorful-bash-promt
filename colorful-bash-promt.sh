@@ -47,7 +47,8 @@ bash_prompt() {
 	
 	PS1="${PROMT_USER}${PROMT_AT}${PROMT_HOST}${PROMT_COLON}${PROMT_PATH}${PROMT_DOLLAR} ${PROMT_INPUT}"
 
-	
+	none="$(tput sgr0)"
+	trap 'echo -ne "${none}"' DEBUG
 
 	
 }
