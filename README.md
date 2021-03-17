@@ -1,0 +1,1 @@
+# simplest-colorful-bash-promt
